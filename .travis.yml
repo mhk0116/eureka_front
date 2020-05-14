@@ -14,6 +14,6 @@ script:
   - npm run build
 
 after_success:
-  - docker login -u "mhk0116@gmail.com" -p "rlaalsghks1!"
+  - docker login -u "mhk0116" -p "rlaalsghks1!"
   - docker build -t mhk0116/eureka_front .
   - docker push mhk0116/eureka_front
