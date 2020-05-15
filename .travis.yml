@@ -1,19 +1,19 @@
 language: node.js
 node_js:
-  - "node"
+    - "node"
 
 sudo: required
 
 services:
-  - docker
+    - docker
 
 install:
-  - npm install
+    - npm install
 
 script:
-  - npm run build
+    - npm run build
 
 after_success:
-  - docker login -u "mhk0116" -p "0dec0f06-5ae9-4a1e-af34-59f1d5a304c9"
-  - docker build -t mhk0116/eureka_front .
-  - docker push mhk0116/eureka_front
+    - docker login -u "mhk0116" -p "806aeec7-676a-470a-973d-18433a23a199"
+    - docker build -t mhk0116/eureka_front .
+    - docker push mhk0116/eureka_front
