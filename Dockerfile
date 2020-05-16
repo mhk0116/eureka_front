@@ -1,13 +1,3 @@
-# FROM nginx:1.14.2-alpine
-
-# COPY ./build /var/www/eureka_front
-# COPY ./nginx.conf /etc/nginx/conf.d/eureka_front.conf
-
-# EXPOSE 80
-
-# CMD ["nginx", "-g", "daemon off;"]
-
-# nginx 이미지를 사용합니다. 뒤에 tag가 없으면 latest 를 사용합니다.
 FROM node:12.16.2 as builder
 
 # 작업 폴더를 만들고 npm 설치
